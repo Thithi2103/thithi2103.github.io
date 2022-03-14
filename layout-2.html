@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style-layout-2.css">
+    <title>Messenger</title>
+</head>
+<body>
+    <div class=" wide grid nav">
+        <div class="nav-pc">
+            <div class="row">
+                <div class="col l-10 ">
+                    <div class="row">
+                        <ul>
+                            <li>
+                                <img src="./img/logo.PNG" alt="">
+                            </li>
+                            <li><a href="">Apps</a></li>
+                            <li><a href="">Games</a></li>
+                            <li><a href="">Bài viết</a></li>
+                            <li><a href="">Ứng dụng nổi bật</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col l-2">
+                    <div class="nav-user ">
+                        
+                            <i class="user-icon ti-user js-user-login"></i>
+                            Đăng nhập
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Thanh menu sau khi thu nhỏ -->
+
+        <div class="nav-mobile">
+            <div class="row">
+                <div class="col c-4">
+                    <label for="nav-mobile-input" class="nav-menu">
+                            <i class="menu-icon ti-menu"></i>
+                    <label for=""></label>
+                </div>
+                <div class="col c-4">
+                    <a href="">
+                        <img src="./img/logo.PNG" alt="">
+                    </a>
+                </div>
+                <div class="col c-4">
+                    <div class="nav-user">
+                        <a href="">
+                            <i class="user-icon ti-user"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phần menu thu nhỏ (đóng  mở) -->
+
+        <input type="checkbox" name="" class="nav__input" id="nav-mobile-input">
+        <label for="nav-mobile-input"  class="nav__overlay">
+        </label>
+
+        <div class="nav-bars-mobile">
+            <ul class = "nav-mobile-list">
+                <li><a href="">Apps</a></li>
+                <li><a href="">Games</a></li>
+                <li><a href="">Bài viết</a></li>
+                <li><a href="">Ứng dụng nổi bật</a></li>
+            </ul>
+            <label  for="nav-mobile-input"  class="nav__mobile-close">
+                <i class="ti-close"></i>
+            </label>
+        </div>
+    </div>
+
+    <div class="content wide grid">
+
+        <!-- cài đặt ứng dụng -->
+
+        <div class="layout-2_setting">
+            <div class="setting-app">
+                <div class="col l-6 l-o-1-2">
+                    <div class="row">
+                        <div class="application-img">
+                            <a href=""><img src="./img/4.4.png" alt=""></a>
+                        </div>
+
+                        <div class="application-name">
+                            <p class="name-title"><a href="#">Messenger</a></p>
+                            <p class="information-app">Text, Voice, &Video chat</p>
+                        </div>
+
+                        <div class="application-setting">
+                            <p><a href="">Cài đặt</a></p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div class="col l-11 l-o-1-2 c-8 c-o-2">
+            <div class="line">
+                <hr>
+            </div>
+        </div>
+
+        <div class="evaluate">
+            <div class="row">
+
+                <div class="col l-o-1-2  ">
+                    <div class="row">
+                        <div class="evaluate-item">
+                            <p class="evaluate-name">615 XẾP HẠNG</p>
+                            <p class="evaluate-data">2,4</p>
+                            <p class="evaluate-note">★★★★★</p>
+                        </div>
+
+                        <div class="line-stand">
+                            <p>|</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col l-o-1-2 ">
+                    <div class="row">
+                        <div class="evaluate-item">
+                            <p class="evaluate-name">TUỔI</p>
+                            <p class="evaluate-data">4+</p>
+                            <p class="evaluate-note">Tuổi</p>
+                        </div>
+
+                        <div class="line-stand">
+                            <p>|</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-o-1-2 ">
+                    <div class="row">
+                        <div class="evaluate-item">
+                            <p class="evaluate-name">BXH</p>
+                            <p class="evaluate-data">#1</p>
+                            <p class="evaluate-note">Mạng xã hội</p>
+                        </div>
+
+                        <div class="line-stand">
+                            <p>|</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-o-1-2 ">
+                    <div class="row">
+                        <div class="evaluate-item">
+                            <p class="evaluate-name">NHÀ PHÁT TRIỂN</p>
+                            <p class="evaluate-data">✍ </p>
+                            <p class="evaluate-note">Meta Flatform, Inc.</p>
+                        </div>
+
+                        <div class="line-stand">
+                            <p>|</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-o-1-2 ">
+                    <div class="row">
+                        <div class="evaluate-item">
+                            <p class="evaluate-name">NGÔN NGỮ</p>
+                            <p class="evaluate-data">VI</p>
+                            <p class="evaluate-note">+32 Ngôn Ngữ Khác</p>
+                        </div>
+
+                        <div class="line-stand">
+                            <p>|</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-o-1-2 ">
+                    <div class="row">
+                        <div class="evaluate-item">
+                            <p class="evaluate-name">KÍCH CỠ</p>
+                            <p class="evaluate-data">36</p>
+                            <p class="evaluate-note">MB</p>
+                        </div>
+
+                        <div class="line-stand">
+                            <p>|</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col l-11 l-o-1-2 c-8 c-o-2">
+            <div class="line-2">
+                <hr>
+            </div>
+        </div>
+
+        <div class="col l-11 l-o-1-2 c-8 c-o-2">
+            <div class="text-header">
+                <p>Xem Trước</p>
+            </div>
+        </div>
+        
+        <div class="preview-container">
+
+            <div class="preview-img">
+                <img src="./img/anh-ung-dung/Facebook-Messenger-800x445.jpg" alt="">
+            </div>
+
+            <div class="preview-img">
+                <img src="./img/anh-ung-dung/Facebook-Messenger-Rooms.jpg" style="width: 800px; height: 445px" alt="">
+            </div>
+
+            <div class="preview-img">
+                <img src="./img/anh-ung-dung/Facebook-Messenger-800x445.jpg" alt="">
+            </div>
+
+            <div class="preview-img">
+                <img src="./img/anh-ung-dung/Facebook-Messenger-800x445.jpg" alt="">
+            </div>
+
+            <div class="preview-img">
+                <img src="./img/anh-ung-dung/Facebook-Messenger-800x445.jpg" alt="">
+            </div>
+
+            <div class="preview-img">
+                <img src="./img/anh-ung-dung/Facebook-Messenger-800x445.jpg" alt="">
+            </div>
+
+            <div class="preview-img">
+                <img src="./img/anh-ung-dung/Facebook-Messenger-800x445.jpg" alt="">
+            </div>
+
+            <div class="preview-img">
+                <img src="./img/anh-ung-dung/Facebook-Messenger-800x445.jpg" alt="">
+            </div>
+
+            <div class="preview-img">
+                <img src="./img/anh-ung-dung/Facebook-Messenger-800x445.jpg" alt="">
+            </div>
+           
+        </div>
+
+        <div class="col l-11 l-o-1-2 c-8 c-o-2">
+            <div class="text-header">
+                <p>Tính Năng</p>
+            </div>
+        </div>
+
+        <div class=" col l-11 l-o-1-2 post-information_app">
+            Tụ họp bên nhau mọi lúc bằng ứng dụng giao tiếp đa năng, miễn phí* của chúng tôi, hoàn chỉnh với các tính năng nhắn tin, gọi thoại, gọi video và nhóm chat video không giới hạn. Dễ dàng đồng bộ tin nhắn và danh bạ với điện thoại Android, đồng thời kết nối với mọi người ở mọi nơi.
+            <br>
+            <br>
+            GỌI ĐIỆN VÀ NHẮN TIN LIÊN ỨNG DỤNG
+            <br>
+            Kết nối với bạn bè trên Instagram ngay từ Messenger. Chỉ cần tìm kiếm họ theo tên hoặc tên người dùng để nhắn tin hay gọi điện.
+            <br>
+            <br>
+            CHẾ ĐỘ TẠM THỜI
+            <br>
+            Gửi những tin nhắn chỉ tồn tại trong chốc lát. Chọn dùng chế độ tạm thời để các tin nhắn đã xem sẽ biến mất khi bạn thoát khỏi đoạn chat.
+            <br>
+            <br>
+            CÀI ĐẶT QUYỀN RIÊNG TƯ
+            <br>
+            Với phần cài đặt mới về quyền riêng tư, bạn chọn ai có thể liên hệ với mình và nơi nhận tin nhắn.
+            <br>
+            <br>
+            CẢM XÚC TÙY CHỈNH
+            <br>
+            Không diễn tả được thành lời? Bạn có thể điều chỉnh cảm xúc của mình với rất nhiều biểu tượng cảm xúc để lựa chọn, bao gồm 🎉 và 🔥. 
+            <br>
+            <br>
+            CHỦ ĐỀ CHAT
+            <br>
+            Chọn chủ đề và màu sắc vui nhộn, như Tie-Dye hoặc Love, để bạn thể hiện bản thân nhiều hơn khi chat.
+            <br>
+            <br>
+            XEM CÙNG NHAU
+            <br>
+            Xem video, chương trình truyền hình và phim với bạn bè qua tính năng Chat video và Phòng họp mặt trên Messenger khi các bạn không ở bên nhau. Ghi lại mọi khoảnh khắc và cảm xúc theo thời gian thực.
+            <br>
+            <br>
+            TỤ HỘI CẢ NHÓM TRONG PHÒNG HỌP MẶT
+            <br>
+            Gửi liên kết đến nhóm chat video cho bất kỳ ai, ngay cả khi họ không có Messenger. Tụ họp lên đến 50 người trong bao lâu tùy thích.
+            <br>
+            <br>
+            DUY TRÌ KẾT NỐI BẰNG CUỘC GỌI VIDEO MIỄN PHÍ*
+            <br>
+            Luôn gắn kết với bạn bè và gia đình bằng tính năng chat video trực tiếp không giới hạn. Tổ chức cuộc gọi video nhóm lên đến 8 người, âm thanh chất lượng cao, video có độ phân giải cao và các tính năng tương tác dành cho video như bộ lọc khuôn mặt.
+            <br>
+            <br>
+            TIN NHẮN VĂN BẢN & CUỘC GỌI ĐIỆN THOẠI MIỄN PHÍ*, KHÔNG GIỚI HẠN
+            <br>
+            Không cần trao đổi số điện thoại, mà chỉ cần gửi tin nhắn cho bạn bè trên Facebook, ngay cả khi họ ở khắp nơi trên thế giới. Tận hưởng tính năng nhắn tin văn bản và nhắn tin thoại chất lượng cao trên máy tính, di động và máy tính bảng.
+            <br>
+            <br>
+            TẮT ĐÈN BẰNG CHẾ ĐỘ TỐI
+            <br>
+            Nâng niu đôi mắt với giao diện chat mới, mượt mà, thẫm màu.
+            <br>
+            <br>
+            GHI ÂM VÀ GỬI TIN NHẮN THOẠI/TIN NHẮN VIDEO
+            <br>
+            Khi tin nhắn văn bản chưa diễn đạt hết ý, hãy ghi âm và gửi đi. Nói, hát, trình diện hoặc hét lên thật to.
+            <br>
+            <br>
+            THỂ HIỆN BẢN THÂN VỚI NHÃN DÁN, GIF VÀ BIỂU TƯỢNG CẢM XÚC
+            <br>
+            Sử dụng nhãn dán tùy chỉnh để thể hiện sức sáng tạo của bạn. Bạn còn có thể thêm hiệu ứng và bộ lọc cho cuộc gọi video.
+            <br>
+            <br>
+            GỬI FILE, ẢNH VÀ VIDEO
+            <br>
+            Không có giới hạn về số lượng file bạn muốn chia sẻ với bạn bè.
+            <br>
+            <br>
+            LÊN KẾ HOẠCH VÀ THỰC HIỆN
+            <br>
+            Dùng cuộc thăm dò ý kiến và nhiều tính năng khác để lên kế hoạch họp mặt. Gợi ý nơi gặp gỡ hoặc cho bạn bè biết bạn đang ở đâu bằng cách chia sẻ vị trí chỉ với vài lần nhấn.
+            <br>
+            <br>
+            GỬI TIỀN AN TOÀN VÀ DỄ DÀNG (chỉ ở Hoa Kỳ)
+            <br>
+            Gửi và nhận tiền một cách an toàn, dễ dàng với bạn bè và gia đình ngay trong ứng dụng này bằng cách thêm thẻ ghi nợ, tài khoản PayPal hoặc thẻ trả trước có thể nạp thêm tiền (thẻ một nguồn chỉ đủ điều kiện để gửi tiền).
+            <br>
+            <br>
+            CHAT VỚI DOANH NGHIỆP
+            <br>
+            Dễ dàng kết nối với doanh nghiệp bạn yêu thích để đặt chỗ, nhận hỗ trợ khách hàng, săn khuyến mãi, v.v.
+            <br>
+            <br>
+            ĐƯA SMS VÀO MESSENGER
+            <br>
+            Không cần phải mở nhiều ứng dụng để giữ liên lạc. Dùng 1 ứng dụng cho cả SMS và Messenger.
+            <br>
+            <br>
+            TƯƠNG THÍCH TRÊN NHIỀU NỀN TẢNG
+            <br>
+            Chat với bạn bè trên hàng loạt thiết bị như máy tính, Portal và các thiết bị khác.
+            <br>
+            <br>
+            Chính sách quyền riêng tư: https://www.facebook.com/about/privacy/
+            <br>
+            <br>
+            TÌM HIỂU THÊM về cách nhắn tin và nhóm chat video trên Messenger tại: http://messenger.com (http://messenger.com/)
+            <br>
+            <br>
+            * Có tính cước dữ liệu
+            <br>
+            <br>
+            Có thể một số tính năng trên Messenger chưa có ở quốc gia hoặc khu vực của bạn.
+        </div>
+
+
+        <div class="col l-11 l-o-1-2 c-8 c-o-2">
+            <div class="line">
+                <hr>
+            </div>
+
+            <div class="text-header">
+                <p>Các Ứng Dụng Tương Tự</p>
+            </div>
+        </div>
+
+        <div class="application-office">
+
+            <div class="row">
+                <div class="col l-3 l-o-1">
+                    <div class="container-appoffice">
+                        <div class="row">
+                            <div class="icon-app_1">
+                                <img src="./img/2.5.png" style="width: 60px; height: 60px;" alt="">
+                            </div>
+                            <div class="text_name-app_1">
+                                <p class="name-app_1">Messenger</p>
+                                <p class="function-app_1">Text, Voice, &Video chat</p>
+                            </div>
+                            <div class=" button-setting_1">
+                                <p><a href="#">Cài đặt</a></p>
+                            </div>
+                            <hr>
+                        </div>  
+                    </div>      
+                </div>
+
+                <div class="col l-3 l-o-1-2">
+                    <div class="container-appoffice">
+                        <div class="row">
+                            <div class="icon-app_1">
+                                <img src="./img/2.7.png" style="width: 60px; height: 60px;" alt="">
+                            </div>
+                            <div class="text_name-app_1">
+                                <p class="name-app_1">Messenger</p>
+                                <p class="function-app_1">Text, Voice, &Video chat</p>
+                            </div>
+                            <div class=" button-setting_1">
+                                <p><a href="#">Cài đặt</a></p>
+                            </div>
+                            <hr>
+                        </div>  
+                    </div>      
+                </div>
+
+                <div class="col l-3 l-o-1-2">
+                    <div class="container-appoffice">
+                        <div class="row">
+                            <div class="icon-app_1">
+                                <img src="./img/4.5.png" style="width: 60px; height: 60px;" alt="">
+                            </div>
+                            <div class="text_name-app_1">
+                                <p class="name-app_1">Messenger</p>
+                                <p class="function-app_1">Text, Voice, &Video chat</p>
+                            </div>
+                            <div class=" button-setting_1">
+                                <p><a href="#">Cài đặt</a></p>
+                            </div>
+                            <hr>
+                        </div>  
+                    </div>      
+                </div>
+            </div>
+
+        </div>
+
+        <div class="application-office">
+            
+            <div class="row">
+                <div class="col l-3 l-o-1">
+                    <div class="container-appoffice">
+                        <div class="row">
+                            <div class="icon-app_1">
+                                <img src="./img/2.9.png" style="width: 60px; height: 60px;" alt="">
+                            </div>
+                            <div class="text_name-app_1">
+                                <p class="name-app_1">Messenger</p>
+                                <p class="function-app_1">Text, Voice, &Video chat</p>
+                            </div>
+                            <div class=" button-setting_1">
+                                <p><a href="#">Cài đặt</a></p>
+                            </div>
+                            <hr>
+                        </div>  
+                    </div>      
+                </div>
+
+                <div class="col l-3 l-o-1-2">
+                    <div class="container-appoffice">
+                        <div class="row">
+                            <div class="icon-app_1">
+                                <img src="./img/2.12.png" style="width: 60px; height: 60px;" alt="">
+                            </div>
+                            <div class="text_name-app_1">
+                                <p class="name-app_1">Messenger</p>
+                                <p class="function-app_1">Text, Voice, &Video chat</p>
+                            </div>
+                            <div class=" button-setting_1">
+                                <p><a href="#">Cài đặt</a></p>
+                            </div>
+                            <hr>
+                        </div>  
+                    </div>      
+                </div>
+
+                <div class="col l-3 l-o-1-2">
+                    <div class="container-appoffice">
+                        <div class="row">
+                            <div class="icon-app_1">
+                                <img src="./img/2.6.png" style="width: 60px; height: 60px;" alt="">
+                            </div>
+                            <div class="text_name-app_1">
+                                <p class="name-app_1">Messenger</p>
+                                <p class="function-app_1">Text, Voice, &Video chat</p>
+                            </div>
+                            <div class=" button-setting_1">
+                                <p><a href="#">Cài đặt</a></p>
+                            </div>
+                            <hr>
+                        </div>  
+                    </div>      
+                </div>
+            </div>
+
+        </div>
+
+        <div class="application-office">
+            
+            <div class="row">
+                <div class="col l-3 l-o-1">
+                    <div class="container-appoffice">
+                        <div class="row">
+                            <div class="icon-app_1">
+                                <img src="./img/3.6.png" style="width: 60px; height: 60px;" alt="">
+                            </div>
+                            <div class="text_name-app_1">
+                                <p class="name-app_1">Messenger</p>
+                                <p class="function-app_1">Text, Voice, &Video chat</p>
+                            </div>
+                            <div class=" button-setting_1">
+                                <p><a href="#">Cài đặt</a></p>
+                            </div>
+                        </div>  
+                    </div>      
+                </div>
+
+                <div class="col l-3 l-o-1-2">
+                    <div class="container-appoffice">
+                        <div class="row">
+                            <div class="icon-app_1">
+                                <img src="./img/5.0.png" style="width: 60px; height: 60px;" alt="">
+                            </div>
+                            <div class="text_name-app_1">
+                                <p class="name-app_1">Word</p>
+                                <p class="function-app_1">Text, Voice, &Video chat</p>
+                            </div>
+                            <div class=" button-setting_1">
+                                <p><a href="#">Cài đặt</a></p>
+                            </div>
+                        </div>  
+                    </div>      
+                </div>
+
+                <div class="col l-3 l-o-1-2">
+                    <div class="container-appoffice">
+                        <div class="row">
+                            <div class="icon-app_1">
+                                <img src="./img/6.7.png" style="width: 60px; height: 60px;" alt="">
+                            </div>
+                            <div class="text_name-app_1">
+                                <p class="name-app_1">Messenger</p>
+                                <p class="function-app_1">Text, Voice, &Video chat</p>
+                            </div>
+                            <div class=" button-setting_1">
+                                <p><a href="#">Cài đặt</a></p>
+                            </div>
+                        </div>  
+                    </div>      
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col l-11 l-o-1-2 c-8 c-o-2">
+            <div class="line">
+                <hr>
+            </div>
+            <div class="row">
+
+                <div class="logo-introduce">
+                    <img src="./img/logo.PNG" style="width: 80px; height: 80px;" alt="">
+                </div>
+                <i class="icon-introduce  ti-angle-right"></i>
+                <div class="text-introduce">
+                    <p>Cửa hàng ứng dụng dành cho MacOS</p>
+                </div>
+            </div>    
+        </div>
+
+        <div class="information">
+            <div class="row">
+                <div class="col l-4 l-o-1-2">
+                    <div class="row">
+                        <div class="col l-6">
+                            <p class="infor-title">Về chúng tôi</p>
+                            <ul class="infor-item">
+                                <li><a href="">Thông tin MakaApp</a></li>
+                                <li><a href="">Trợ giúp & Hỗ trợ</a></li>
+                                <li><a href="">Việc làm</a></li>
+                                <li><a href="">Trợ giúp</a></li>
+                            </ul class="infor-item">
+                        </div>
+
+                        <div class="col l-6">
+                            <p class="infor-title">Hợp pháp</p>
+                            <ul class="infor-item">
+                                <li><a href="">Thông tin hợp pháp</a></li>
+                                <li><a href="">Điều khoản sử dụng</a></li>
+                                <li><a href="">Chính sách bảo mật</a></li>
+                                <li><a href="">Chính sách Cookie</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-7">
+                    <div class="row">
+                        <div class="col l-6">
+                            <p class="infor-title">Báo cáo sự cố</p>
+
+                            <div class="messenger-send">
+                                <div class="row ">
+                                    <div class="col l-3">
+                                        <div class="name-send">
+                                            <input type="text"  name="" id="" placeholder="Name" required class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="col l-3">
+                                        <div class="email-send">
+                                            <input type="text"  name="" id="" placeholder="Email" required class="form-control">
+                                        </div>
+                                    </div>
+                                     
+                                </div>
+                                
+                                <div class="note-send">
+                                    <input type="text"  name="" id="" placeholder="Messenger" required class="form-control">
+                                </div>
+                                
+                                <div class="button-send">
+                                    <p><a href="#">Gửi</a></p>
+                                </div>
+                            
+                            </div>
+                        </div>
+
+                        <div class="col l-6">
+                            <p class="infor-title">Chúng tôi trên mạng xã hội</p>
+
+                            <div class="row socical-img">
+                                <a href=""><img src="./img/480px-Facebook_f_logo_(2019).svg.png" alt=""></a>
+                                <a href=""><img src="./img/Instagram_logo_2016.svg.webp" alt=""></a>
+                                <a href=""><img src="./img/twitter-logo-vector-png-clipart-1.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer">
+
+            <div class="container-footer">
+                <div class="footer-text">
+                    <p>Tên và Logo của MakaApp là thương hiệu đã đăng ký bởi công ty Maka<br>
+                    Bản quyền @ 2021-2050 - Mọi quyền được bảo lưu <br>
+                From by hoangthiedklm@gmail.com</p>
+                </div>
+
+                <div class="footer-logo">
+                    <img src="./img/logo.PNG" alt="">
+                </div>
+            </div>    
+        </div>
+
+        <!-- Form Đăng nhập -->
+
+        <div class="login js-login wide grid">
+            <div class="login-container js-login-container">
+                <div class="login-close js-login-close">
+                    <div class="ti-close"></div>
+                </div>
+
+                <header class="login-logo">
+                    <img src="./img/logo.PNG" style="width: 100px; height: 100px;" alt="">
+                </header>
+
+                <div class="login-body">
+                    <div class="login-text">
+                        <p>Đăng nhập</p>
+                    </div>
+
+                    <div class="login-input">
+                        <input  id = "input-user" type="text" class="modal-input" placeholder = "Tên đăng nhập">
+                        <input  id = "login-passwork" type="text" class="modal-input" placeholder = "Mật khẩu">
+                    </div>
+
+                    <button class="login-button">
+                        <p>Đăng nhập</p>
+                    </button>
+
+                
+                    <hr style="width: 200px">
+                    <button class="login-other">
+                        <div class="row">
+                            <div class="logo-facebook">
+                                <img src="./img/480px-Facebook_f_logo_(2019).svg.png" style = "width: 23px; height: 23px;" alt="">
+                            </div>
+
+                            <div class="other-text">
+                                <p>Tiếp tục với Facebook</p>
+                            </div>
+                        </div>
+                    </button>
+
+                </div>
+
+                <footer class = "login-footer">
+                    <p class = "login-help">
+                        Bạn chưa có tài khoản?<a href="#"> Đăng ký</a>
+                    </p>
+                 </footer>
+            </div>   
+        </div>
+    </div>
+
+    <script
+          type="text/javascript"
+          src="https://code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+          type="text/javascript"
+          src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script
+          type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <script type="text/javascript" src="./js/wed.js"></script>
+</body>
+</html>
