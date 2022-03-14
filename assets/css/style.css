@@ -1,0 +1,837 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen;
+}
+
+hr {
+    font-size: 0.5px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    opacity: 0.2;
+}
+
+.line>hr {
+    margin-top: 22px;
+    font-size: 0.5px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    opacity: 0.2;
+}
+
+.line-2>hr {
+    font-size: 0.5px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.2;
+    margin-bottom: 22px;
+}
+
+.text-header>p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 22px;
+    margin-bottom: 40px;
+    font-size: 22px;
+}
+
+.left {
+    margin-left: 58px;
+}
+.animation {
+    animation-name: fadeIn;
+    animation-duration: 5s;
+}
+.animation-2 {
+    animation-name: fadeIn;
+    animation-duration: 9s;
+}
+
+/* Thanh menu của PC */
+
+.nav {
+    background-color: #333335;
+    height: 98px;
+}
+
+.nav img {
+    height: 86px;
+    width: 88px;
+}
+
+.nav ul  {
+    display: flex;
+}
+
+.nav-pc ul li {
+    list-style: none;
+    padding: 0px 22px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 98px;
+}
+
+.nav-pc ul li a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.nav-pc>img:hover {
+    cursor: pointer;
+}
+
+.nav-pc ul li a:hover {
+    background-color: #ccc;
+    color: #333335;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.nav .nav-user {
+    line-height: 98px;
+    float: right;
+    padding: 0px 22px;
+    color: #ccc;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Thanh menu của Mobile */
+
+.nav-mobile {
+    display: none;
+}
+
+.nav-mobile .nav-menu {
+    float: left;
+    padding: 0 22px;
+    line-height: 98px;
+    color: #ccc;
+}
+.nav-mobile .nav-menu a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.nav-mobile img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-bars-mobile ul {
+    display: block;
+}
+
+.nav-bars-mobile ul li {
+    padding: 16px 22px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-bars-mobile>ul>li>a {
+    color: #333335;
+}
+
+.nav__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+
+.nav-bars-mobile{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.2s, opacity linear 0.2s;
+}
+
+.nav-mobile-list {
+    margin-top: 30px;
+}
+
+.nav-mobile-list li a {
+    text-decoration: none;
+}
+
+.nav-mobile-list li a:hover {
+    background-color: #333335;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.user-icon:hover,
+.menu-icon:hover {
+    background-color: #ccc;
+    color: #333335;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.nav__mobile-close {
+    font-size: 1.3rem;
+    color:  #333335;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 14px;
+    height: 14px;
+}
+
+.nav__input:checked ~ .nav__overlay {
+    display: block;
+}
+
+.nav__input:checked ~ .nav-bars-mobile {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.nav__input {
+    display: none;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* Phần thân trang */
+
+.content {
+    background-color: #f5f5f7;
+    height: inherit;
+}
+
+/* Phần search */
+.search .form-control {
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-top: 15px;
+}
+
+/* Phần banner nhiều icon */
+
+.banner-img-app{
+    margin-top: 15px;
+    margin-left: 17px;
+}
+
+
+.banner-img-app .app_game-icon img{
+    width: 53px;
+    height: 53px;
+    opacity: 0.9;
+    border-radius: 20px;
+}
+
+.logo_text img {
+    height: 250px;
+    width: 250px;;
+}
+
+.logo_text .logo>img{
+    border-radius: 20px;
+    margin-left: -28px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+.logo_text .text {
+    margin-top: -12px;
+    text-align: center;
+    margin-left: -12px;
+}
+
+.text>h2,
+.text>p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 5px 0px;
+    opacity: 0.7;
+}
+
+/* banner nhiều ảnh */
+
+.banner {
+    margin-top: 22px;
+    height: 700px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.banner>img {
+    width: 100%;
+    margin-top: 60px;
+}
+
+.button {
+    border: 1px solid #6e6e73;
+    border-radius: 20px;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    opacity: 0.7;
+    margin-left: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.button>a {
+    text-decoration: none;
+    color: #6e6e73;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.text-banner>h1 {
+    font-size: 42px;
+    margin-left: 48px;
+    line-height: 1.08;
+    margin-top: 19px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    opacity: 0.9;
+}
+
+.banner-3>img {
+    width: 100%;
+    height: 425px;
+    margin-top: 121px;
+}
+
+.text-banner-2>h1 {
+    font-size: 42px;
+    line-height: 1.008;
+    margin-left: 45px;
+    margin-top: 249px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* s;ick s;ider cho app */
+
+.element {
+    background: #fff;
+    border-radius: 20px;
+    width: 313px;
+    height: 370px;
+    max-width: 313px;
+    max-height: 378px;
+}
+
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1;
+    z-index: 5;
+    transition: all 0.2s linear;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    opacity: 0.1;
+}
+.slick-arrow:hover {
+color: white;
+opacity: 1.4;
+}
+.slick-prev {
+left: 0;
+}
+.slick-next {
+right: 0;
+}
+
+.number-app{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 20px;
+    color: black;
+}
+
+.icon-app {
+    margin-top: 70px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.text_name-app .name-app {
+    margin-left: 15px;
+    margin-top: 22px;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.text_name-app .function-app{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    text-align: center;
+    margin-left: -25px;
+    opacity: 0.8;
+}
+
+.button-setting{
+    width: 70px;
+    height: 29px;
+    border-radius: 50px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-left: 38px;
+    margin-top: 26px;
+    
+}
+
+.button-setting>p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.button-setting>p>a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* phần app nhiều app thứ 2 */
+
+.application-office {
+    margin-bottom: 30px;
+}
+
+.text_name-app_1{
+    padding: 0 22px;
+}
+
+.text_name-app_1 .name-app_1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    opacity: 0.9;
+}
+.text_name-app_1 .function-app_1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.button-setting_1{
+    width: 70px;
+    height: 29px;
+    border-radius: 50px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+.button-setting_1:hover {
+    opacity: 1;
+}
+
+.button-setting_1>p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.button-setting_1>p>a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Phần bài viết */
+
+.post-item {
+    width: 350px;
+    height: 407px;
+    background-color: white;
+    border-radius: 20px;
+    max-width: 350px;
+    height: 407px;
+}
+
+.post-img>img {
+    width: 350px;
+    border-radius: 20px;
+}
+
+.post-text .post-note {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 8px;
+    margin-left: 25px;
+    opacity: 0.5;
+}
+
+.post-text .post-title {
+    font-size: 24px;
+    margin-left: 22px;
+    margin-top: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.post-more>p {
+    float: right;
+    margin-top: 71px;
+    margin-right: 26px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.post-more>p>a {
+    text-decoration: none;
+    color: rgb(74, 103, 228);
+}
+
+.logo-introduce img {                
+    margin-top: 22px;
+}
+
+.icon-introduce {
+    font-size: 12px;
+    margin-top: 52px;
+    opacity: 0.5;
+}
+
+.text-introduce {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    margin-top: 44px;
+    opacity: 0.5;
+}
+
+/* Phần thông tin trang */
+
+.information {
+    height: 252px;
+}
+
+.infor-title {
+    font-size: 20px;
+    margin-left: 12px;
+    opacity: 0.8;
+    margin-bottom: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.infor-item>li {
+    list-style-type: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 5px 0px;
+    font-size: 15px;
+    margin-left: 12px;
+}
+
+.infor-item>li>a {
+    text-decoration: none;
+    color: #333335;
+    opacity: 0.7;
+}
+
+.infor-item>li>a:hover {
+    opacity: 1;
+}
+
+.messenger-send {
+    margin-left: 12px;
+}
+
+.name-send .form-control {
+    border-radius: 20px;
+    height: 25px;
+    width: 115px;
+    border: 1px solid;
+    outline: none;
+    padding: 10px;
+}
+
+.email-send .form-control{
+    border-radius: 20px;
+    height: 25px;
+    width: 115px;
+    border: 1px solid;
+    margin-left: 39px;
+    outline: none;
+    padding: 10px;
+}
+
+.note-send .form-control {
+    border-radius: 20px;
+    height: 45px;
+    width: 254px;
+    border: 1px solid;
+    margin-top: 12px;
+    outline: none;
+    padding: 10px;
+}
+
+.button-send {
+    width: 62px;
+    height: 22px;
+    border-radius: 50px;
+    background-color: #333335;
+    border: 1px solid;
+    margin-top: 10px;
+    opacity: 0.5;
+    float: right;
+    margin-right: 117px;
+}
+
+.button-send>p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    line-height: 22px;
+}
+
+.button-send>p>a {
+    text-decoration: none;
+    color: white;
+}
+
+.button-send>p>a {
+    opacity: 1;
+}
+
+.socical-img img {
+    width: 50px;
+    height: 50px;
+    margin-left: 36px;
+    margin-top: 16px;
+}
+
+.footer {
+    background-color: #333335;
+    height: 98px;
+}
+
+.footer-text {
+    margin-top: 12px;
+}
+
+.footer-text>p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 17px;
+    font-size: 12px;
+    color:  #ccc;
+}
+
+.footer-logo>img {
+    float: right;
+    width: 80px;
+    height: 80px;
+    margin-top: -65px;
+}
+
+/* Phần login */
+
+.login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.login.open {
+    display: flex;
+}
+
+.login-container {
+    background-color: #333335;
+    width: 312px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFaceIn ease 0.5s;
+    border-radius: 20px;
+}
+
+.login-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.login-close:hover {
+    opacity: 1;
+    color: red;
+}
+
+.login-logo img {
+    margin-top: 12px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.login-text>p {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    font-size: 22px;
+}
+
+.modal-input {
+    width: 195px;
+    border: 1px solid;
+    height: 28px;
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    margin-top: 15px;
+    outline: none;
+    font-size: 11px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.login-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    color: black;
+    background: white;
+    padding: 5px;
+    border: 1px solid;
+    margin-top: 11px;
+    width: 100px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.login-other {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    width: 165px;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 2px 15px;
+}
+
+.login-other .other-text>p {
+    line-height: 25px;
+    padding: 0px 15px;
+    font-size: 10px;
+}
+
+.login-footer .login-help {
+    font-size: 12px;
+    margin-left: 122px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 12px 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+}
+
+.login-footer .login-help>a {
+    color: rgb(204, 61, 61);
+}
+
+.login-other:hover,
+.login-button:hover {
+    background-color: #333335;
+    color: #fff;
+}
+
+@keyframes modalFaceIn {
+    from {
+        opacity: 0;
+        transform:  translateY(-140px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+ 
+/* Phần reponsive của mobile */
+
+@media  (max-width: 1023px){
+    .nav-mobile {
+        display: block;
+    }
+    .nav-pc {
+        display: none;
+    }
+    .column-1 {
+        margin-right: 22px;
+        margin-left: 35px;
+    }
+
+    .column-2,
+    .column-3,
+    .column-4,
+    .column-5,
+    .column-6 {
+        display: none;
+    }
+
+    .logo_text .text {
+        margin-top: -12px;
+        text-align: center;
+        margin-left: -2px;
+    }
+
+    .logo_text .logo>img{
+        border-radius: 50px;
+        margin-left: 70px;
+        animation-name: fadeIn;
+        animation-duration: 2s;
+    }
+
+    .banner-app-2 {
+        display: none;
+    }
+    .banner {
+        height: 530px;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

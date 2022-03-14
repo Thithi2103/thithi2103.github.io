@@ -1,0 +1,92 @@
+
+/* Phần đầu */
+.application-img a img {
+    margin-top: 40px;
+}
+
+.application-name .name-title {
+    margin-top: 42px;
+    font-size: 24px;
+    padding: 0px 20px;
+    margin-left: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.name-title>a {
+    text-decoration: none;
+    color: #333335;
+}
+
+.application-name .information-app {
+    font-size: 13px;
+    margin-left: 25px;
+    padding-top: 4px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    opacity: 0.5;
+}
+
+.application-setting {
+    width: 70px;
+    height: 29px;
+    border-radius: 50px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 10px;
+    opacity: 0.7;
+    margin-top: 54px;
+    margin-left: 42px;
+}
+
+.application-setting:hover {
+    opacity: 1;
+}
+
+.application-setting>p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.application-setting>p>a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Phần Thân */
+.evaluate {
+    margin-left: 232px;
+    margin-top: 22px;
+}
+
+.evaluate-item{
+    text-align: center;
+   
+}
+
+.evaluate-name {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+}
+.evaluate-data {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+}
+.evaluate-note {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 9px;
+}
+.line-stand {
+    margin-left: 42px;
+    opacity: 0.5;
+}
+
+.preview-container {
+    margin-left: 15px;
+}
+
+.post-information_app {
+    font-size: 13px;
+    line-height: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300px;
+    color: #333;
+}
